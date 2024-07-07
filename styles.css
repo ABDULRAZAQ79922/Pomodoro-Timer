@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.myTimerContainer {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.myTimerContainer:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.myTimeDisplay {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.myProgressBarContainer {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#myProgressBar {
+    height: 10px;
+    background: #fda085;
+    width: 0;
+    transition: width 1s linear;
+}
+
+.myButtons button {
+    background: #0cceeb;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.myButtons button:hover {
+    background: #ff3700;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.myButtons button:active {
+    transform: translateY(0);
+}
+
+.mySettings {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mySettings label {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.mySettings input {
+    width: 60px;
+    text-align: center;
+}
